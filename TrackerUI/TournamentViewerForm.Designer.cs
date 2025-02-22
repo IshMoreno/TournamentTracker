@@ -33,6 +33,7 @@
             tournamentName = new Label();
             roundLabel = new Label();
             roundDropDown = new ComboBox();
+            unplayedOnlyCheckbox = new CheckBox();
             SuspendLayout();
             // 
             // headerLabel
@@ -76,12 +77,26 @@
             roundDropDown.Size = new Size(210, 38);
             roundDropDown.TabIndex = 3;
             // 
+            // unplayedOnlyCheckbox
+            // 
+            unplayedOnlyCheckbox.AutoSize = true;
+            unplayedOnlyCheckbox.FlatStyle = FlatStyle.Flat;
+            unplayedOnlyCheckbox.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            unplayedOnlyCheckbox.ForeColor = Color.FromArgb(51, 153, 255);
+            unplayedOnlyCheckbox.Location = new Point(148, 164);
+            unplayedOnlyCheckbox.Name = "unplayedOnlyCheckbox";
+            unplayedOnlyCheckbox.Size = new Size(209, 41);
+            unplayedOnlyCheckbox.TabIndex = 4;
+            unplayedOnlyCheckbox.Text = "Unplayed Only";
+            unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
+            // 
             // TournamentViewerForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(866, 578);
+            Controls.Add(unplayedOnlyCheckbox);
             Controls.Add(roundDropDown);
             Controls.Add(roundLabel);
             Controls.Add(tournamentName);
@@ -102,5 +117,6 @@
         private Label tournamentName;
         private Label roundLabel;
         private ComboBox roundDropDown;
+        private CheckBox unplayedOnlyCheckbox;
     }
 }
