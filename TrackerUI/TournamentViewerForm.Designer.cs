@@ -34,6 +34,9 @@
             roundLabel = new Label();
             roundDropDown = new ComboBox();
             unplayedOnlyCheckbox = new CheckBox();
+            matchupListBox = new ListBox();
+            teamOneName = new Label();
+            teamOneScoreLabel = new Label();
             SuspendLayout();
             // 
             // headerLabel
@@ -83,12 +86,44 @@
             unplayedOnlyCheckbox.FlatStyle = FlatStyle.Flat;
             unplayedOnlyCheckbox.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             unplayedOnlyCheckbox.ForeColor = Color.FromArgb(51, 153, 255);
-            unplayedOnlyCheckbox.Location = new Point(148, 164);
+            unplayedOnlyCheckbox.Location = new Point(148, 144);
             unplayedOnlyCheckbox.Name = "unplayedOnlyCheckbox";
             unplayedOnlyCheckbox.Size = new Size(209, 41);
             unplayedOnlyCheckbox.TabIndex = 4;
             unplayedOnlyCheckbox.Text = "Unplayed Only";
             unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // matchupListBox
+            // 
+            matchupListBox.BorderStyle = BorderStyle.FixedSingle;
+            matchupListBox.FormattingEnabled = true;
+            matchupListBox.ItemHeight = 30;
+            matchupListBox.Location = new Point(31, 205);
+            matchupListBox.Name = "matchupListBox";
+            matchupListBox.Size = new Size(326, 302);
+            matchupListBox.TabIndex = 5;
+            // 
+            // teamOneName
+            // 
+            teamOneName.AutoSize = true;
+            teamOneName.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            teamOneName.ForeColor = Color.FromArgb(51, 153, 255);
+            teamOneName.Location = new Point(443, 205);
+            teamOneName.Name = "teamOneName";
+            teamOneName.Size = new Size(169, 37);
+            teamOneName.TabIndex = 6;
+            teamOneName.Text = "<team One>";
+            // 
+            // teamOneScoreLabel
+            // 
+            teamOneScoreLabel.AutoSize = true;
+            teamOneScoreLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            teamOneScoreLabel.ForeColor = Color.FromArgb(51, 153, 255);
+            teamOneScoreLabel.Location = new Point(443, 253);
+            teamOneScoreLabel.Name = "teamOneScoreLabel";
+            teamOneScoreLabel.Size = new Size(82, 37);
+            teamOneScoreLabel.TabIndex = 7;
+            teamOneScoreLabel.Text = "Score";
             // 
             // TournamentViewerForm
             // 
@@ -96,6 +131,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(866, 578);
+            Controls.Add(teamOneScoreLabel);
+            Controls.Add(teamOneName);
+            Controls.Add(matchupListBox);
             Controls.Add(unplayedOnlyCheckbox);
             Controls.Add(roundDropDown);
             Controls.Add(roundLabel);
@@ -118,5 +156,8 @@
         private Label roundLabel;
         private ComboBox roundDropDown;
         private CheckBox unplayedOnlyCheckbox;
+        private ListBox matchupListBox;
+        private Label teamOneName;
+        private Label teamOneScoreLabel;
     }
 }
