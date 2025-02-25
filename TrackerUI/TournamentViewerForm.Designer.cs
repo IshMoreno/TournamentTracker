@@ -42,6 +42,7 @@
             teamTwoScoreLabel = new Label();
             teamTwoName = new Label();
             versusLabel = new Label();
+            scoreButton = new Button();
             SuspendLayout();
             // 
             // headerLabel
@@ -177,12 +178,28 @@
             versusLabel.TabIndex = 12;
             versusLabel.Text = "-VS-";
             // 
+            // scoreButton
+            // 
+            scoreButton.FlatAppearance.BorderColor = Color.Silver;
+            scoreButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
+            scoreButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
+            scoreButton.FlatStyle = FlatStyle.Flat;
+            scoreButton.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            scoreButton.ForeColor = Color.FromArgb(51, 153, 255);
+            scoreButton.Location = new Point(683, 326);
+            scoreButton.Name = "scoreButton";
+            scoreButton.Size = new Size(133, 69);
+            scoreButton.TabIndex = 13;
+            scoreButton.Text = "Score";
+            scoreButton.UseVisualStyleBackColor = true;
+            // 
             // TournamentViewerForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(923, 578);
+            Controls.Add(scoreButton);
             Controls.Add(versusLabel);
             Controls.Add(teamTwoScoreText);
             Controls.Add(teamTwoScoreLabel);
@@ -221,5 +238,6 @@
         private Label teamTwoScoreLabel;
         private Label teamTwoName;
         private Label versusLabel;
+        private Button scoreButton;
     }
 }
