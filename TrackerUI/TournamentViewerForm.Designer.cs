@@ -133,14 +133,14 @@
             // 
             // teamOneScoreValue
             // 
-            teamOneScoreValue.Location = new Point(548, 256);
+            teamOneScoreValue.Location = new Point(531, 256);
             teamOneScoreValue.Name = "teamOneScoreValue";
             teamOneScoreValue.Size = new Size(100, 35);
             teamOneScoreValue.TabIndex = 8;
             // 
             // teamTwoScoreText
             // 
-            teamTwoScoreText.Location = new Point(548, 441);
+            teamTwoScoreText.Location = new Point(531, 444);
             teamTwoScoreText.Name = "teamTwoScoreText";
             teamTwoScoreText.Size = new Size(100, 35);
             teamTwoScoreText.TabIndex = 11;
@@ -150,7 +150,7 @@
             teamTwoScoreLabel.AutoSize = true;
             teamTwoScoreLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             teamTwoScoreLabel.ForeColor = Color.FromArgb(51, 153, 255);
-            teamTwoScoreLabel.Location = new Point(443, 438);
+            teamTwoScoreLabel.Location = new Point(443, 441);
             teamTwoScoreLabel.Name = "teamTwoScoreLabel";
             teamTwoScoreLabel.Size = new Size(82, 37);
             teamTwoScoreLabel.TabIndex = 10;
